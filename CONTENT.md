@@ -1,11 +1,11 @@
-# CONTENT.md — fact audit for the Off-Plan Desk landing page
+# CONTENT.md — fact audit for the Investors Blueprint landing page
 
 Every subject-specific fact that appears on `index.html`, with its source tag.
 Anything not listed here is either generic copy, a placeholder, or Josh's own
 adapted voice. Nothing on the page was invented.
 
 **Source tags:** `site claim` (offplanjosh.com) · `LinkedIn` · `Property Finder` ·
-`video` (YouTube channel) · `Instagram` · `assumed` (working title, flagged)
+`video` (YouTube channel) · `Instagram` · `client` (chosen by Felix, not a sourced fact)
 
 ---
 
@@ -100,12 +100,12 @@ Equity certificates are visible inside image 04. No award claim is made in copy.
 
 | Element | Value on page | Status |
 |---|---|---|
-| Program name | Off-Plan Desk with Josh | **assumed** working title, flagged in README |
+| Program name | Investors Blueprint with Josh | **client-chosen** by Felix 2026-09-17, not a sourced fact |
 | Price | `[PROGRAM_PRICE]` | placeholder |
 | Duration | `[PROGRAM_DURATION]` | placeholder |
 | Call cadence | `[CALL_CADENCE]` | placeholder |
 | Messaging SLA | `[MESSAGING_SLA]` | placeholder |
-| Application URL | `https://cal.com/lvrgd/call` | **set** |
+| Application URL | `https://cal.com/lvrgd` | **set** |
 
 Deliverables described (calls, messaging, brief review, shortlist logic,
 developer filters, payment plan reading, remote process, honest fit check) are
@@ -118,7 +118,7 @@ Listed once, as clearly secondary, in text links only.
 | Route | URL on page | Source tag |
 |---|---|---|
 | Free YouTube education | https://www.youtube.com/@thejoshuapacker | video |
-| Book a call with Josh | https://cal.com/lvrgd/call | client-supplied booking link |
+| Book a call with Josh | https://cal.com/lvrgd | client-supplied booking link |
 | Instagram short form | https://www.instagram.com/offplanjosh/ | Instagram |
 | Personal site | https://offplanjosh.com/ | site claim |
 
@@ -154,4 +154,3 @@ Present verbatim in the footer:
 
 - Price, duration, call cadence, messaging SLA
 - Consulting testimonials (none exist, do not invent when they do)
-- Whether "Off-Plan Desk with Josh" is the final program name

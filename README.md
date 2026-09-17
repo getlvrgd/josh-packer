@@ -1,4 +1,4 @@
-# Off-Plan Desk with Josh — landing page
+# Investors Blueprint with Josh — landing page
 
 Single-page landing site for Joshua Packer's personalized Dubai and Abu Dhabi
 property consulting offer. Plain HTML, CSS and vanilla JS. No build step,
@@ -35,7 +35,7 @@ renders on the page as an orange monospace chip, so nothing can ship unnoticed.
 
 | Token | Occurrences | What it is | Status |
 |---|---|---|---|
-| ~~`[APPLICATION_URL]`~~ | 0 | Primary CTA target. | **Done**, set to `https://cal.com/lvrgd/call` |
+| ~~`[APPLICATION_URL]`~~ | 0 | Primary CTA target. | **Done**, set to `https://cal.com/lvrgd` |
 | `[PROGRAM_PRICE]` | 1 | Price of the seat. Offer block. | **Required** |
 | `[PROGRAM_DURATION]` | 3 | How long the seat runs. Offer block, commitments list, FAQ. | **Required** |
 | `[CALL_CADENCE]` | 4 | How often calls happen. Do not invent a number. | **Required** |
@@ -62,10 +62,11 @@ grep -o '\[[A-Z_]*\]' index.html | sort -u
 
 ## Program name
 
-`[PROGRAM_NAME]` is resolved in the markup as **"Off-Plan Desk with Josh"**.
-This is an **assumed working title** from the brief, not something Josh has
-published. If he or Felix picks a different name, find and replace
-`Off-Plan Desk` across `index.html` (it appears in the title tag, nav, CTAs,
+`[PROGRAM_NAME]` is resolved in the markup as **"Investors Blueprint with Josh"**,
+chosen by Felix on 2026-09-17. It replaced the research pack's assumed working
+title ("Off-Plan Desk with Josh"), which was never anything Josh had published.
+This is a client-chosen name, not a sourced fact. To change it, find and replace
+`Investors Blueprint` across `index.html` (it appears in the title tag, nav, CTAs,
 offer block, FAQ and footer).
 
 ## Page structure
@@ -100,7 +101,7 @@ These were hard requirements in the brief and are worth preserving on edit.
 - **Corporate filler banned.** leverage, streamline, seamless, robust, empower,
   elevate, unlock, supercharge, cutting-edge, best-in-class, game-changing,
   revolutionary, world-class, boasts, serves as, stands as. Verified absent.
-- **One primary CTA.** Every button points at `https://cal.com/lvrgd/call`. All booking links
+- **One primary CTA.** Every button points at `https://cal.com/lvrgd`. All booking links
   on the page, including the side door and footer, now resolve to that same
   destination. Josh's own free 15 minute brokerage call is no longer linked.
 - **No WhatsApp in the hero.** His published numbers exist but are deliberately
