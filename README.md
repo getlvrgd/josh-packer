@@ -28,37 +28,44 @@ site/
   CONTENT.md     every subject-specific fact on the page and its source tag
 ```
 
-## Placeholders to swap before launch
+## Offer terms (all placeholders resolved)
 
-Every placeholder is written as a literal bracketed token in `index.html` and
-renders on the page as an orange monospace chip, so nothing can ship unnoticed.
+There are no placeholders left in `index.html`. Every value below is live copy,
+set by Felix on 2026-09-17.
 
-| Token | Occurrences | What it is | Status |
-|---|---|---|---|
-| ~~`[APPLICATION_URL]`~~ | 0 | Primary CTA target. | **Done**, set to `https://cal.com/lvrgd` |
-| `[PROGRAM_PRICE]` | 1 | Price of the seat. Offer block. | **Required** |
-| `[PROGRAM_DURATION]` | 3 | How long the seat runs. Offer block, commitments list, FAQ. | **Required** |
-| `[CALL_CADENCE]` | 4 | How often calls happen. Do not invent a number. | **Required** |
-| `[MESSAGING_SLA]` | 5 | Reply-time commitment for messaging. Do not invent one. | **Required** |
+| Field | Value on page | Where it appears |
+|---|---|---|
+| Booking / CTA target | `https://cal.com/lvrgd` | 4 buttons, side door, footer, canonical tag |
+| Duration | 1 year | Offer meta, process commitments, FAQ |
+| Calls | Whenever you need | Offer meta, seat card, included list, commitments |
+| Messaging | Within 30 minutes | Offer meta, seat card, included list, commitments, FAQ |
+| Price | **not shown** | Removed by request. Price is handled on the call. |
 
-Swap them all at once:
-
-```
-cd site
-sed -i '' 's|\[PROGRAM_PRICE\]|AED 00,000|g' index.html
-sed -i '' 's|\[PROGRAM_DURATION\]|12 weeks|g' index.html
-sed -i '' 's|\[CALL_CADENCE\]|fortnightly|g' index.html
-sed -i '' 's|\[MESSAGING_SLA\]|within one working day|g' index.html
-```
-
-After swapping, drop the `.ph` chip styling if you no longer want the values
-visually highlighted (search for `class="ph"` and `class="ph light-ph"`).
-
-Check nothing was missed:
+Confirm nothing was missed:
 
 ```
-grep -o '\[[A-Z_]*\]' index.html | sort -u
+grep -o '\[[A-Z_]*\]' index.html | sort -u    # should return nothing
 ```
+
+### Price is deliberately absent
+
+The offer card had an "Investment" column. It was removed on request, so the
+page never states a price and the meta row is three columns wide. The page is
+application-gated, so price gets discussed on the call. If you reinstate it,
+add a fourth `.meta` block and change `.offer-meta` back to
+`repeat(4,minmax(0,1fr))` in the `min-width:720px` media query.
+
+### Two commitments worth re-reading before launch
+
+These are now written on the page as process guarantees, in Josh's voice:
+
+- **"Whenever you need"** for calls. Unlimited scheduling with no cap stated.
+- **"Within 30 minutes"** for messaging replies. No business-hours or timezone
+  qualifier. As written this reads as always-on.
+
+Both are strong promises to put in writing on a public page. If Josh wants them
+softer, the usual qualifiers are "within 30 minutes during UAE business hours"
+or "same day". Each is a small edit in five and four places respectively.
 
 ## Program name
 

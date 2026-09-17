@@ -101,10 +101,10 @@ Equity certificates are visible inside image 04. No award claim is made in copy.
 | Element | Value on page | Status |
 |---|---|---|
 | Program name | Investors Blueprint with Josh | **client-chosen** by Felix 2026-09-17, not a sourced fact |
-| Price | `[PROGRAM_PRICE]` | placeholder |
-| Duration | `[PROGRAM_DURATION]` | placeholder |
-| Call cadence | `[CALL_CADENCE]` | placeholder |
-| Messaging SLA | `[MESSAGING_SLA]` | placeholder |
+| Price | not shown on page | removed by client 2026-09-17, handled on the call |
+| Duration | 1 year | **client-set** |
+| Call cadence | Whenever you need | **client-set** |
+| Messaging SLA | Within 30 minutes | **client-set** |
 | Application URL | `https://cal.com/lvrgd` | **set** |
 
 Deliverables described (calls, messaging, brief review, shortlist logic,
@@ -152,5 +152,5 @@ Present verbatim in the footer:
 
 ## Open gaps
 
-- Price, duration, call cadence, messaging SLA
+- None. All offer terms are set. Price is intentionally not published.
 - Consulting testimonials (none exist, do not invent when they do)
