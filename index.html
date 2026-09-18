@@ -181,7 +181,8 @@ section{padding:76px 0}
 }
 
 /* ---------- proof strip ---------- */
-.proof{padding:0}
+.proof{padding:0 0 76px}
+@media(min-width:900px){ .proof{padding:0 0 112px} }
 .proof-in{
   background:var(--night-band); color:var(--bone);
   border-radius:var(--r);
@@ -255,11 +256,12 @@ section{padding:76px 0}
 .dark .stat-k{color:var(--muted-dark)}
 
 /* ---------- desk band ---------- */
-.band{padding:0; background:var(--bone)}
+.band{padding:0 0 76px; background:var(--bone)}
+@media(min-width:820px){ .band{padding:0 0 112px} }
 .band-in{position:relative; border-radius:var(--r); overflow:hidden; border:1px solid var(--rule)}
 .band-in img{width:100%; aspect-ratio:21/9; object-fit:cover; object-position:center 42%}
 @media(max-width:700px){ .band-in img{aspect-ratio:16/10} }
-.band-cap{margin-top:11px; font-size:0.78rem; color:var(--muted); line-height:1.5}
+.band-cap{margin-top:14px; font-size:0.78rem; color:var(--muted); line-height:1.5}
 
 /* ---------- what you get ---------- */
 .get-grid{display:grid; gap:16px}
